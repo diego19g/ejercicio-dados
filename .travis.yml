@@ -1,0 +1,19 @@
+language: php
+
+php:
+  - "7.0"
+
+script:
+  - php index.php
+  
+
+
+deploy:
+
+  provider: heroku
+
+  app: ejercicio-dados
+
+  api_key:
+
+    secure: $HEROKU_API_KEY
